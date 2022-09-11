@@ -1,0 +1,21 @@
+name: Core
+author: ImTheScatman
+version: 1.0
+main: me.chemorris.core.Main
+
+commands:
+    fly:
+    staffchat:
+        aliases: sc
+    gamemode:
+        aliases: gm
+    list:
+    op:
+    deop:
+    craftingtable:
+        aliases: craft
+    god:
+    clearallentities:
+        aliases: cae
+    heal:
+    feed:
