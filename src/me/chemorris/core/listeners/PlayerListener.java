@@ -4,7 +4,6 @@ import me.chemorris.core.handler.ColourHandler;
 import me.chemorris.core.Messages;
 import me.chemorris.core.commands.Command_fly;
 import me.chemorris.core.commands.Command_god;
-import me.chemorris.core.handler.ConfigHandler;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
@@ -21,7 +20,7 @@ public class PlayerListener implements Listener {
     
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e)
-    {
+    {       
         if(e.getPlayer().hasPermission("core.ranks.staff"))
         {
             for(Player onlinePlayer : Bukkit.getOnlinePlayers())

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/commands/Command_cutclean.java</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/config.yml</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/commands/Command_craftingtable.java</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/listeners/PlayerListener.java</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/commands/Command_op.java</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/Main.java</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/commands/Command_feed.java</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/commands/Command_core.java</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/plugin.yml</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/commands/Command_gamemode.java</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/listeners/BlockListener.java</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/commands/Command_fly.java</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/commands/Command_heal.java</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/commands/Command_deop.java</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/commands/Command_staffchat.java</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/Messages.java</file>
+            <file>file:/C:/Users/chemo/Documents/NetBeansProjects/Core/src/me/chemorris/core/commands/Command_clearallentities.java</file>
+        </group>
+    </open-files>
+</project-private>

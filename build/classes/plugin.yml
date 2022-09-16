@@ -19,3 +19,5 @@ commands:
         aliases: cae
     heal:
     feed:
+    cutclean:
+    core:

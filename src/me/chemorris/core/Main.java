@@ -1,21 +1,11 @@
 package me.chemorris.core;
 
-import me.chemorris.core.commands.Command_clearallentities;
-import me.chemorris.core.commands.Command_craftingtable;
-import me.chemorris.core.commands.Command_deop;
-import me.chemorris.core.commands.Command_feed;
-import me.chemorris.core.commands.Command_fly;
-import me.chemorris.core.commands.Command_gamemode;
-import me.chemorris.core.commands.Command_god;
-import me.chemorris.core.commands.Command_heal;
-import me.chemorris.core.commands.Command_op;
-import me.chemorris.core.commands.Command_staffchat;
-import me.chemorris.core.handler.ConfigHandler;
+import me.chemorris.core.commands.*;
+import me.chemorris.core.listeners.*;
+import me.chemorris.core.handler.*;
 import org.bukkit.plugin.java.JavaPlugin;
-import me.chemorris.core.listeners.ChatListener;
-import me.chemorris.core.listeners.CommandListener;
-import me.chemorris.core.listeners.PlayerListener;
 import org.bukkit.Bukkit;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.Plugin;
 
 public class Main extends JavaPlugin {
@@ -28,12 +18,14 @@ public class Main extends JavaPlugin {
         getLogger().info("Plugin enabled!");
         
         // Config
-        ConfigHandler.load((Plugin)this, "config.yml");
+        FileConfiguration config = this.getConfig();
+        this.saveDefaultConfig();
         
         // Listeners
         Bukkit.getServer().getPluginManager().registerEvents(new ChatListener(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new CommandListener(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new PlayerListener(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new BlockListener(), this);
         
         // Commands
         getServer().getPluginCommand("fly").setExecutor(new Command_fly());
@@ -46,10 +38,16 @@ public class Main extends JavaPlugin {
         getServer().getPluginCommand("god").setExecutor(new Command_god());
         getServer().getPluginCommand("heal").setExecutor(new Command_heal());
         getServer().getPluginCommand("feed").setExecutor(new Command_feed());
+        getServer().getPluginCommand("core").setExecutor(new Command_core());
+        getServer().getPluginCommand("cutclean").setExecutor(new Command_cutclean());
     }
     
     public void onDisable()
     {
         getLogger().info("Plugin disabled!");
+    }
+    
+    public static Main getInstance() {
+        return plugin;
     }
 }
